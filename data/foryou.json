@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Manual Entry",
+    "subtitle": "This is a regular link",
+    "image": "https://source.unsplash.com/600x400/?news",
+    "url": "https://example.com/article"
+  },
+  {
+    "title": "",
+    "subtitle": "",
+    "image": "",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "title": "",
+    "subtitle": "",
+    "image": "",
+    "url": "https://youtu.be/3JZ_D3ELwOQ"
+  }
+]
