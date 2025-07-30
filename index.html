@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yahoo-Style Portal (3 Columns)</title>
+  <title>Satsang Chintamani</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans">
 
-  <div class="max-w-7xl mx-auto p-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="max-w-7xl mx-auto p-4 grid grid-cols-1 md:grid-cols-4 gap-6">
 
-    <!-- Column 1: Trending -->
-    <aside class="space-y-6">
+    <!-- Sidebar: Trending -->
+    <aside class="md:col-span-1 space-y-6">
       <section class="bg-white p-4 rounded shadow">
         <h2 class="text-xl font-bold mb-4">🔥 Trending</h2>
         <ol id="trending" class="space-y-3"></ol>
       </section>
     </aside>
 
-    <!-- Column 2: Top Stories + For You -->
-    <section class="space-y-6 md:col-span-1">
-      <!-- Carousel -->
-      <div class="bg-white p-4 rounded shadow relative">
+    <!-- Main Content -->
+    <main class="md:col-span-3 space-y-6">
+
+      <!-- Featured Carousel -->
+      <section class="bg-white p-4 rounded shadow relative">
         <h2 class="text-xl font-bold mb-4">Top Stories</h2>
         <div id="carousel-container" class="relative overflow-hidden rounded h-64">
           <div id="carousel-slides" class="relative w-full h-full"></div>
@@ -34,35 +35,15 @@
             ▶
           </button>
         </div>
-      </div>
+      </section>
 
-      <!-- For You -->
-      <div class="bg-white p-4 rounded shadow">
+      <!-- For You Section -->
+      <section class="bg-white p-4 rounded shadow">
         <h2 class="text-xl font-bold mb-4">For You</h2>
-        <div id="foryou" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
-      </div>
-    </section>
-
-    <!-- Column 3: Local News / Ads -->
-    <aside class="space-y-6">
-      <div class="bg-white p-4 rounded shadow">
-        <h2 class="text-xl font-bold mb-4">📍 Local News</h2>
-        <ul class="space-y-2">
-          <li><a href="#" class="text-blue-700 hover:underline">City council bans leaf blowers 🔇</a></li>
-          <li><a href="#" class="text-blue-700 hover:underline">Farmers' market relocating 🥕</a></li>
-          <li><a href="#" class="text-blue-700 hover:underline">Heatwave warning ☀️</a></li>
-        </ul>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <h2 class="text-xl font-bold mb-4">💰 Ads</h2>
-        <div class="space-y-3">
-          <a href="#"><img src="https://picsum.photos/200/100?grayscale&1" class="rounded w-full" alt="Ad 1" /></a>
-          <a href="#"><img src="https://picsum.photos/200/100?grayscale&2" class="rounded w-full" alt="Ad 2" /></a>
-        </div>
-      </div>
-    </aside>
-
+        <div id="foryou" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+      </section>
+      
+    </main>
   </div>
 
   <script src="script.js"></script>
